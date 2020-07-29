@@ -10,8 +10,7 @@ class DB {
     };
 
     findAllPossibleManagers(employeeId) {
-        return this.connection.query("SELECT id, first_name, last_name FROM employee WHERE id"),
-            employeeId
+        return this.connection.query("SELECT id, first_name, last_name FROM employee WHERE id = ?", employeeId);
     }
 
 
@@ -42,8 +41,8 @@ class DB {
 
     findAllRoles() {
         return this.connection.query(
-            ' SELECT role.id, role.title, department.name, role.salary FROM role LEFT JOIN department on role.department_id = department.id'
-        );
+       'SELECT * FROM role'
+            );
     }
 
     createRole(role) {
@@ -56,8 +55,8 @@ class DB {
 
     findAllDepartments() {
         return this.connection.query(
-            'SELECT department.id, department.name, SUM (role.salary) FROM employee LEFT JOIN role on employee.role_id = role.id LEFT JOIN department on role.department_id = department.id GROUP BY department.id, department.name'
-        );
+        'SELECT * FROM department'
+            );
     }
 
     createDepartment(department) {
