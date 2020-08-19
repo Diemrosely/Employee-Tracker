@@ -15,6 +15,8 @@ So that I can organize and plan my business
 
 # Application Demo:
 
+https://drive.google.com/file/d/1z05HgNbg5njCt6jc0i7RwV25tD32eHgO/view
+
 ![GIF](Assets/demo.gif)
 
 # Additional information about this repository: 
