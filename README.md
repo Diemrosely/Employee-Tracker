@@ -12,6 +12,11 @@ As a business owner
 I want to be able to view and manage the departments, roles, and employees in my company
 So that I can organize and plan my business
 ```
+
+# Application Demo:
+
+![GIF](Assets/demo.gif)
+
 # Additional information about this repository: 
 
 Design the following database schema containing three tables:
@@ -45,3 +50,7 @@ Build a command-line application that at a minimum allows the user to:
   * View departments, roles, employees
 
   * Update employee roles
+
+  ## Collaboration
+
+  * Kenneth Wardlow
